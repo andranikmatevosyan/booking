@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 Orders list
+  table.table
+    thead
+        tr
+            th name
+            th surname
+            th email
+            th phone
+            th time
+            th date
+    tbody
+        if items
+            each item, i in items
+                tr
+                    td #{item.name}
+                    td #{item.surname}
+                    td #{item.email}
+                    td #{item.phone}
+                    td #{item.time}
+                    td #{item.day}
+
+
